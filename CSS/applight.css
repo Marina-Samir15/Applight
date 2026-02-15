@@ -1,0 +1,431 @@
+:root {
+  --main-color: #9c7afd;
+  --sec-color: #831b99;
+  --third-color: #8e1efc;
+}
+
+/* Start Components */
+.head-section,
+.spical-head .line,
+.spical-head h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.line {
+  color: var(--third-color) !important;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #818992;
+  width: 50%;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.head-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.store {
+  margin-top: 10px;
+}
+.store img {
+  border-radius: 12px;
+  width: 150px;
+  margin-right: 10px;
+}
+/* End Components */
+body {
+  background-color: var(--main-color);
+}
+/* START TOP BUTTON */
+#scrollToTop {
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+  color: white;
+  background-color: var(--sec-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+#scrollToTop i {
+  width: 20px;
+  height: 20px;
+}
+/* END TOP BUTTON */
+/* START HOME */
+/* staert nav */
+.navbar {
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  color: var(--sec-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border: none;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler:hover {
+  color: var(--sec-color);
+}
+.main-btn {
+  background-color: white;
+  color: var(--main-color);
+  border: none;
+}
+.main-btn:hover,
+.main-btn:focus,
+.main-btn:active {
+  background-color: var(--third-color);
+  border: none !important;
+  box-shadow: none !important;
+}
+.home .pragraph {
+  margin-top: 50px;
+}
+.home .app img {
+  width: 150px;
+}
+/* ens nav */
+@media (max-width: 1000px) {
+  .iphone img {
+    display: none;
+  }
+  .app {
+    margin-bottom: 10px;
+  }
+}
+/* END HOME */
+/* Start About */
+.about .icon-container {
+  position: relative;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background: linear-gradient(to left, var(--main-color), #cd9ffa);
+  color: white;
+  line-height: 135px;
+  margin: 0 auto;
+  transition: transform 0.8s ease;
+}
+.about .icon-container:hover {
+  transform: rotate(360deg);
+}
+.about .container .button {
+  border: 2px solid var(--third-color);
+  color: var(--third-color);
+  border-radius: 8px;
+  width: 200px;
+  height: 60px;
+}
+.about .container .button:hover {
+  background-color: var(--third-color);
+  color: white;
+  border: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 800px) {
+  .about .container .row {
+    display: block;
+  }
+  .about .container .row .col {
+    margin-bottom: 20px;
+  }
+}
+/* End About */
+/* Start Features */
+.features,
+.faq {
+  background-color: #fafafa;
+}
+.features .icon {
+  color: var(--main-color);
+  font-size: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.features .container .row h3 {
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.features .container .row p {
+  color: #666;
+  font-size: 14px;
+}
+.features .icon:hover {
+  transform: scale(1.1);
+  color: var(--sec-color);
+}
+.features h3:hover {
+  color: var(--sec-color);
+}
+.features .container .row img:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+}
+@media (max-width: 800px) {
+  .features .container .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .features .container .img-fluid {
+    display: none;
+  }
+}
+/* End Features */
+/* Start Our Team */
+.team,
+.faq {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.team .container .row .col img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.team .container .row .col h3 {
+  color: var(--sec-color);
+  font-size: 18px;
+  margin: 10px 0;
+}
+.team .container .row .col p {
+  color: #333;
+  font-size: 14px;
+}
+.team .container .row .col:hover img {
+  transform: translateY(-15px);
+}
+@media (max-width: 770px) {
+  .team .container .row {
+    display: block;
+  }
+  .team .container .row .col img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* End Our Team */
+/* Start FAQ */
+.faq .container .row .col p:last-child {
+  color: #818992;
+}
+.faq .container h5:hover {
+  color: var(--main-color);
+}
+@media (max-width: 850px) {
+  .faq {
+    padding: 30px;
+  }
+  .faq .container .row {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .faq .container .spical-head h1 {
+    font-size: 18px;
+  }
+}
+/* End FAQ */
+/* Start Contact */
+.contact {
+  min-height: 100vh;
+  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper {
+  background: transparent;
+  border: 5px solid var(--third-color);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 auto;
+}
+.wrapper:hover {
+  border: 3px solid var(--main-color);
+  box-shadow: 0 0 20px var(--main-color), inset 0 0 20px var(--main-color);
+}
+.wrapper h2 {
+  font-size: 32px;
+  text-align: center;
+  color: var(--sec-color);
+  font-weight: bold;
+  transition: 0.5s;
+}
+.wrapper:hover h2 {
+  color: var(--main-color);
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+}
+.input-box input {
+  width: 350px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid var(--third-color);
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--sec-color);
+  padding: 0 10px 0 35px;
+  transition: 0.1s;
+}
+.wrapper:hover .input-box input {
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 10px var(--main-color), inset 0 0 20px var(--main-color);
+}
+.input-box input::placeholder {
+  color: var(--sec-color);
+}
+.input-box .icon {
+  position: absolute;
+  left: 10px;
+  color: var(--sec-color);
+  font-size: 19px;
+  line-height: 55px;
+}
+.wrapper:hover .input-box .icon {
+  color: var(--main-color);
+}
+.forget-pass {
+  margin: -15px 0 15px;
+  margin-top: 5px;
+}
+.forget-pass a {
+  color: var(--third-color);
+  font-size: 14px;
+}
+.forget-pass a:hover {
+  text-decoration: underline;
+}
+.buttonlogin {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: var(--sec-color);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: 0.1s;
+}
+.wrapper:hover .buttonlogin {
+  background: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
+}
+.register-link {
+  font-size: 14px;
+  margin: 25px 0;
+}
+.register-link p {
+  color: var(--third-color);
+}
+.register-link p a {
+  color: var(--sec-color);
+  font-weight: 600;
+  transition: 0.5s;
+}
+.wrapper:hover .register-link p a {
+  color: var(--main-color);
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+  .spical-head h1 {
+    font-size: 28px;
+  }
+  .input-box input {
+    font-size: 14px;
+  }
+  .buttonlogin {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+  .spical-head h1 {
+    font-size: 28px;
+  }
+  .input-box input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .buttonlogin {
+    font-size: 14px;
+  }
+}
+/* End Contact */
+/* Start Download */
+.download {
+  background: var(--main-color);
+  padding: 60px;
+}
+.download .container .spical-head p:last-child {
+  padding: 20px;
+  width: 65%;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.download .container .store {
+  margin-top: 100px;
+}
+@media (max-width: 550px) {
+  .download .container .spical-head h1 {
+    font-size: 25px;
+  }
+  .download .container .spical-head p:last-child {
+    font-size: 18px;
+  }
+}
+/* End Download */
+/* Start Footer */
+.footer {
+  font-size: 13px;
+  color: #333;
+  padding: 20px;
+}
+.footer a {
+  color: var(--third-color);
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+/* End Footer */
